@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(($(echo $WATER | tr water 01234 | xargs -I{} echo 5#{}) + $(echo $STIR | tr stir. 0123. | xargs -I{} echo 4#{}))) | python3 -c "import sys;n=int(input());print(''.join('bestchol'[int(d)] for d in oct(n)[2:]))"
+printf "obase=8\nibase=10\n%d+%d\n" $((5#$(echo $WATER | tr water 01234))) $((4#$(echo $STIR | tr stir. 0123.))) | dc | tr 01234567 bestchol
