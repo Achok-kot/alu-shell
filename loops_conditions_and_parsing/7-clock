@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # writing a bash script that displays the time for hours and minutes
-hour=o
+hour=0
 while [ $hour -le 12 ]; do
- echo "Hour: $hour"
- minute=1
- while [ $minute -le 59 ]; do
-  echo "$minute"
-  ((minute++))
- done
- ((hour++))
+  echo "Hour: $hour"
+  minute=1
+  while [ $minute -le 59 ]; do
+    echo "$minute"
+    ((minute++))
+  done
+  ((hour++))
 done
