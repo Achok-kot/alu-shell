@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
-# writing a bash script that loop from 1 to 10
+# displying the content of the best school using while loop
 i=1
-while [ $i -le 10 ]; do 
-if [ $i -eq 4 ]; then
-   echo "bad luck"
-elif [ $i -eq ]; then
+while [ $i -le 10 ]; do
+  if [ $i -eq 4 ]; then
+    echo "bad luck"
+  elif [ $i -eq 8 ]; then
     echo "good luck"
-else 
-    echo "best school"
-fi
-((i++))
+  else
+    echo "Best School"
+  fi
+  ((i++))
 done
