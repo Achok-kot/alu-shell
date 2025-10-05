@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# writing a script that display the content of a file
+while IFS=: read -r username _ userid _ _ _ home _; do
+  echo "$username:$userid:$home"
+done < /etc/passwd
