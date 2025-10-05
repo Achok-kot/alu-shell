@@ -1,13 +1,10 @@
 #!/usr/bin/env bash
 # writing a bash script that loop from 1 to 10
 i=1
-while [ $i -le 10 ];
-do 
-if
-   [ $i -eq 4 ]; then
+while [ $i -le 10 ]; do 
+if [ $i -eq 4 ]; then
    echo "bad luck"
-elif
-    [ $i -eq ]; then
+elif [ $i -eq ]; then
     echo "good luck"
 else 
     echo "best school"
