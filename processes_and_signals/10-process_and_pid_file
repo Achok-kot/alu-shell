@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-
-# Create PID file
+# Creating a PID file
 echo $$ > /var/run/myscript.pid
 
 # Handle SIGINT (Ctrl+C)
