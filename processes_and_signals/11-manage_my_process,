@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# script that manages both files need to be pushed to git 
+while true
+do
+    echo "I am alive!" >> /tmp/my_process
+    sleep 2
+done
